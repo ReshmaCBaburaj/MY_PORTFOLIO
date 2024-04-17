@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow:hidden;
+}
+.about{
+    padding-top: 200px;
+
+}
+
+#download{
+   
+    background-color: black;
+    padding: 10px 20px!important;
+    /* padding-bottom: 20px; */
+    display: inline-block;
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+   /* #download {color: white;
+    background-color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 20px;
+    } */
