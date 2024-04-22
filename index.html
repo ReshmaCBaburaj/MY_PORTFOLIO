@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="icon" href="./images/logo.png">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -13,75 +14,224 @@
     <!-- css -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
-            <img src="./images/logo.png" height="100px">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link me-5 fs-4 " aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-5 fs-4" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-5 fs-4" aria-current="page" href="#">Skills</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link me-5 fs-4" aria-current="page" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <button class="btn px-4 py-2 fs-4 rounded-0 me-5" style="background-color: blue ;font-weight: bold;
-                color: white;"> Contact</button>
-              </li>
-            </ul>
+  <div class="main" style="background-image: url(./images/background_image.avif);background-repeat: no-repeat;background-size: cover;">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+              <img src="./images/logo.png" height="100px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link me-5 fs-4 " aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-5 fs-4" aria-current="page" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-5 fs-4" aria-current="page" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link me-5 fs-4" aria-current="page" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn px-4 py-2 fs-4 rounded-0 me-5" style="background-color: blue ;font-weight: bold;
+                  color: white;"><a href="#contact" style="text-decoration: none;color:white">Contact</a></button>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-    </nav>
-
+      </nav>    
+  
+      <!-- home -->
+      <div id="home" class="mb-5">
+          <div class="row home-section">
+              <div class="col-md-1"></div>
+              <div class="col-md-4 col-sm-12">
+                  <img src="./images/aboupage.jpg" style="width: 100%;height: auto;" >
+              </div>
+             <div class="col-md-6 col-sm-12">
+              <div class="home text-center">
+                  <h1 style="padding-bottom: 20px;" class="about-title">Hi I am Reshma</h1>
+                  <h4 class="pb-5"> Full Stack Developer</h4>
+                  <a class=" download" href="./images/about_page.webp" download>Download CV</a>
+                  <a class="download" href="#about">See More</a>
+              </div>
+             </div>
+             <div class="col-md-1"></div>
       
+          </div>
+      </div>
+<!-- about-->
+      <div id="about">
+        <div class="abtcont">
+           <h1 class="text-light text-center mt-3">About Me</h1>
+           <p class="text-light fs-5 mt-3">I'm Reshma C Baburaj,a dedicated Cloud & Infra Services Engineer with 1.8 years of experience in LTIMINDTREE.I graduated from Bishop Speechly College For Advanced Studies Pallom,Kottayam,in 2022 where  I honed my analytical and technical skills.
 
-    <!-- about me -->
-    <div id="about">
-        <div class="row about-section">
-            <div class="col-md-1"></div>
-            <div class="col-md-4">
-                <img src="./images/about_page.webp" style="width: 100%;" >
-            </div>
-           <div class="col-md-6">
-            <div class="about text-center">
-                <h1 style="padding-bottom: 10px;" class="about-title">Hi I am Reshma</h1>
-                <h4 class="pb-3"> Full Stack Developer</h4>
-                <p style="text-align: justify;" >I am working as a Cloud & Infra Services Engineer in LTIMINDTREE company.I found my interest in development part.Working hard,and learning new things to give my 100% in FULL Stack Development</p>
-                <a class="pt-4" id="download" href="./images/about_page.webp" download>Download</a>
-            </div>
-           </div>
-           <div class="col-md-1"></div>
-    
+            Currently,I am enriching my expertise in cloud solutions and simultaneously venturing into full-stack development,with a keen focus on becoming a proficient <b>MEARN STACK DEVELOPER</b>. I am actively engaged in an internship at Luminar Technolab,which is helping me to bridge my skills from cloud engineering to full-stack development.
+
+            I am passionate about leveraging my background in cloud computing to build scalable and efficent web applications. My career journey is driven by my desire to integrate backend technologies with front-end frameworks to deliver seamless user experience.
+
+            Feel free to connect with me as I continue to explore new technologies and advance my expertise in the ever-evolving tech landscape!
+           </p>
         </div>
+      </div>
+  
+      <!-- skill -->
+      <div id="skill" class="skill">
+        <div>
+          <h1 class="text-center m-5">SKILLS</h1>
+
+          <div class="row" style="margin-bottom: 100px;">
+            <div class="col-lg-3 col-md-6  col-sm-12 d-flex align-items-center justify-content-center p-5">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/htmlimg.png">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="text-center">HTML</h2>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/cssimg.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="text-center">CSS</h2>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/javascriptimg.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="text-center">JAVASCRIPT</h2>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <div class="col-lg-3  col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="./images/bootstrapimg.jpg">
+                    </div>
+                    <div class="flip-card-back">
+                        <h2 class="text-center">BOOTSTRAP</h2>
+                    </div>
+                </div>
+               </div>
+            </div>
+            
+          </div>
+          
+         
+        </div>
+      </div>
+
+      <!-- projects -->
+     
+  
+    <div id="project" class="projects ">
+      <h1 class="text-center">PROJECTS</h1>
+     
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5" >
+            <div class="pjsection ">
+              <img src="./images/travel.jpg" style="height: 300px;width: 400px;">
+              <div class="middle">
+                <div class="text">
+                  <h3>Travel Website</a>
+                    </h3>
+                </div>
+              </div>
+        </div>
+          
+        </div>
+      
+        <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5" >
+          <div class="pjsection ">
+            <img src="./images/restaurant project.jpg" style="height: 300px;width: 400px;">
+            <div class="middle">
+              <div class="text">
+                <h3>Restaurant Website</a>
+                  </h3>
+              </div>
+            </div>
+      </div>
+        
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center justify-content-center p-5" >
+        <div class="pjsection ">
+          <img src="./images/furnitureimg.jpg" style="height: 300px;width: 400px;">
+          <div class="middle">
+            <div class="text">
+              <h3>Furniture Website</a>
+                </h3>
+            </div>
+          </div>
+    </div>
+      
     </div>
 
-    <!-- skills -->
-<h1 class="text-center mb-5">Skills</h1>
-
-<div class="container">
-    <div class="flip-card">
-        <div class="flip-card-inner">
-            <div class="flip-card-front">
-                <img src="./images/htmlimg.png">
-            </div>
-            <div class="flip-card-back">
-                <h2>Tommy Shelby</h2>
-            </div>
         </div>
+     
     </div>
-</div>
+
+ 
+      <!-- contact -->
+           <!-- Contact -->
+           <div id="contact" class="bg-dark contact ">
+            <div class="row">
+              <h1 class="text-center mt-5 pt-1 text-light">Contact Me</h1>
+            </div>
+            <div class="row">
+              <div class="col-1"></div>
+              <div class="col-10 row">
+                <div class="col-md-6">
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label text-light">Type your Messege</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" cols="=10" rows="3" style="resize: none;"></textarea>
+                  </div>
+                  <div class="mb-3 text-center">
+                    <button class="btn btn-primary">Submit</button>
+                  </div>
+                </div>
+              <div class="col-md-6">
+                <div class="contact-section pt-5">
+                  <div class="contact-icon"><a href="https://www.linkedin.com/login/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></div>
+                  <div class="contact-icon"><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                  <div class="contact-icon"><a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                  <div class="contact-icon"><a href=""><i class="fa-brands fa-whatsapp"></i></a></div>
+                  <div class="contact-icon"><a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+                  <div class="contact-icon"><a href="https://www.facebook.com/login.php/" target="_blank"><i class="fa-brands fa-facebook-f"></i></a></div>
+              </div>
+              </div>
+              </div>
+              <div class="col-1"></div>
+            </div>
+          </div>
+  </div>
+
 </body>
 </html>

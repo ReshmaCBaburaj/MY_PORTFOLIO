@@ -1,33 +1,124 @@
 *{
     margin: 0px;
     padding: 0px;
-    overflow-x:hidden;
+    
 }
-.about{
-    padding-top: 200px;
+body{
+    overflow-x: hidden;
+    
+}
 
+.home{
+    padding-top: 100px;
+
+}
+
+#home{
+    margin-bottom: 10px;
+   
+}
+.home-section{
+    background-color: rgb(245, 243, 243);
+    margin:10px 90px;
 }
 
 #about{
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./images/about_section.webp');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
 }
-.about-section{
-    background-color: #f8f9fa;
+.abtcont{
+    width: 70%;
+    height: 500px;
+    background-color: rgba(0, 0, 0, 0.699);
+    border-radius: 7px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 30px;
+}
+.abtcont p{
+    text-align: justify;
 }
 
-
-
-#download{
+.download{
    
-    background-color: black;
+    background-color: white;
     padding: 10px 20px!important;
     /* padding-bottom: 20px; */
     display: inline-block;
     text-decoration: none;
-    color: blue;
+    color: black;
     font-size: 20px;
     font-weight: bold;
     border-radius: 6px;
+    margin-bottom: 50px;
+    border: 1px solid red;
+}
+
+.download:hover{
+    color: blue;
+    background-color: black;
+    border-style: none;
+}
+
+.flip-card {
+    perspective: 1000px;
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.flip-card-inner{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+width: 100%;
+height: 100%;
+position: absolute;
+backface-visibility: hidden;
+border-radius: 1rem;
+}
+
+.flip-card-front img{
+width: 200px;
+height: 300px;
+object-fit: cover;
+border-radius: 1rem;
+}
+
+/* .flip-card-front {
+background-color: #3498db; 
+color: #fff;
+} */
+
+.flip-card-back{
+background-color: #1e8283;
+color: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+transform: rotateY(180deg);
+}
+.projects{
+    color: white;
+    padding: 30px;
+    background-image: url(./images/about_section.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
    /* #download {color: white;
@@ -39,42 +130,88 @@
     margin-top: 20px;
     } */
 
-    .flip-card {
-        perspective: 1000px;
-        width: 200px;
-        height: 300px;
-        position: relative;
-    }
+.pjsection{
+    position: relative;
+    /* width:50% */
+}
+.text{
+    background-color: goldenrod;
+    color: white;
+    padding:10px 60px;
+    border-radius: 20px;
+    opacity: 0;
+    
+}
 
-    .flip-card-inner{
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s;
-    }
+.pjsection img{
+    border-radius: 24px;
+}
 
-   .flip-card-front,.flip-card-back {
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 1rem;
-   }
+.middle{
+    position: absolute;
+    top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 
-   .flip-card-front img{
-    width: 200px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 1rem;
-   }
+}
 
-   .flip-card-front {
-    background-color: rgb(46, 157, 185);
-    color: #fff;
-   }
 
-   .flip-card-back{
-    background-color: #1e8283;
-    color: #fff;
+
+.pjsection:hover img{
+    opacity: 0.3;
+}
+.pjsection:hover .text{
+    background-color:burlywood;
+    color: black;
+    opacity: 1;
+}
+
+
+.contact{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.contitem li{
+    color: white;
+    text-decoration: none !important;
+
+}
+.contlink{
+    text-decoration: none !important;
+    color: white;
+}
+.contlink:hover{
+    color: gold
+}
+
+
+.contact-section{
+    display: flex;
+    align-items: center;/* for putting all child elements vertically center */
+    justify-content: center;
+    /* for putting all child elements horizontaly center */
+    margin-top: 20px;
+}
+.contact-icon{
+    width: 60px;
+    height: 50px;
+    color: black;
+    /* border: 1px solid; */
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-   }
+    margin-right: 10px;
+}
+.contact-icon a{
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+  
+}
+.contact-icon:hover{
+    background-image: linear-gradient(to top left,rgb(223, 85, 31),yellow);
+}
+.contact-icon:hover i{
+    color: white;
+    animation: shake 0.75s;
+}
